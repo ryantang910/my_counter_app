@@ -40,7 +40,7 @@ function App() {
     if (loading) return; // Cancel if waiting for a new count
     try {
       setLoading(true);
-      let result = await my_counter_app_backend.dec(); // Increment the count by 1
+      let result = await my_counter_app_backend.dec(); // Decrement the count by 1
       console.log(`[decrement] result:`, result);
       console.log(`[decrement] hash:`, result.hash);
       await fetchCount(); // Fetch the new count
